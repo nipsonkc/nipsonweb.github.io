@@ -1,0 +1,2986 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*header section*/
+#header {
+  height: 100vh;
+}
+
+/*header section -->  Container --> header-flex*/
+.header-flex {
+  height: 15vh;
+  display: flex;
+  flex-wrap: wrap;
+  background-image: white;
+  justify-content: space-between;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+
+  margin-top: -50px;
+}
+
+/*logo*/
+.logo {
+  flex-basis: 20%;
+}
+
+.logo img {
+  height: 15vh;
+  border: 10px solid whitesmoke;
+}
+
+/*nav-bar*/
+.nav-bar {
+  flex-basis: 55%;
+
+  background: #211c1b;
+  text-shadow: 1px 1px black;
+}
+.nav-bar ul {
+  list-style-type: none;
+}
+.nav-bar ul li {
+  display: inline-block;
+  padding: 20px;
+}
+
+.nav-bar ul li a {
+  text-decoration: none;
+  font-size: 35px;
+  color: whitesmoke;
+}
+
+/*contact-bar*/
+.contact-bar {
+  flex-basis: 20%;
+  color: rgb(143, 123, 123);
+  z-index: 2;
+  visibility: hidden;
+}
+
+.contact-bar button {
+  cursor: pointer;
+}
+
+.contact_box {
+  background-color: black;
+  display: none;
+}
+
+/*header section -->  Container --> Slider*/
+.slider {
+  height: 85vh;
+  width: 100%;
+  margin: auto;
+  margin-top: 50px;
+  position: relative;
+  top: 8.2vh;
+}
+
+.slideshow_img_text {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+  position: absolute;
+}
+
+.slideshow_img_text img {
+  height: 100%;
+  width: 100%;
+}
+
+.slideshow_img_text .img-text {
+  position: relative;
+  top: -500px;
+
+  background: rgba(255, 255, 255, 0.2);
+  width: fit-content;
+  padding: 25px;
+  text-align: center;
+  margin: auto;
+}
+
+.slideshow_img_text .img-text h1 {
+  font-family: "New Rocker", cursive;
+  text-shadow: 1px 1px 1px white;
+
+  font-size: 58px;
+  letter-spacing: 9px;
+}
+
+.slideshow_img_text .img-text h3 {
+  text-shadow: 1px 1px 1px white;
+  font-size: 30px;
+  font-family: "Philosopher", sans-serif;
+  margin-top: 2px;
+}
+
+/*About me section*/
+#about_me {
+  height: 100vh;
+  border: 2px black solid;
+}
+.about_heading {
+  border: 1px solid transparent;
+  height: 10vh;
+  margin: auto;
+  margin-top: 18vh;
+  text-align: center;
+  font-size: 28px;
+  line-height: 10vh;
+  background-image: linear-gradient(
+    to right,
+    navajowhite,
+    #141111,
+    #141111,
+    navajowhite
+  );
+
+  width: 90%;
+}
+
+.about_heading h2 {
+  color: whitesmoke;
+}
+
+.about_flex_container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 65vh;
+  width: 90%;
+
+  margin: auto;
+  margin-top: 4vh;
+  justify-content: space-evenly;
+}
+
+.about_flex_1 {
+  height: 85%;
+  flex-basis: 45%;
+  border: 12px solid black;
+  position: relative;
+}
+
+.about_flex_1 .aboutslider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.about_flex_2 {
+  border: 2px solid black;
+  flex-basis: 45%;
+  text-align: center;
+  height: 85%;
+  background-image: linear-gradient(wheat, transparent);
+}
+
+.about_flex_2 p {
+  margin: 20px;
+  margin-left: 35px;
+  margin-right: 35px;
+
+  font-size: 18px;
+  line-height: 32px;
+}
+
+/*skills section*/
+#skills {
+  height: 100vh;
+  border: black 1px solid;
+}
+.skills_text {
+  border: 1px solid transparent;
+  height: 10vh;
+  margin: auto;
+  margin-top: 18vh;
+  text-align: center;
+  font-size: 28px;
+  line-height: 10vh;
+
+  width: 90%;
+
+  background-image: linear-gradient(
+    to right,
+    navajowhite,
+    #141111,
+    #141111,
+    navajowhite
+  );
+}
+
+.skills_text h2 {
+  color: whitesmoke;
+}
+
+.skills_content{
+  border:1px solid black;
+
+  height: 65vh;
+  width: 90%;
+
+  margin: auto;
+  margin-top: 4vh;
+
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  
+  align-items: center;
+
+}
+
+.skill_content_individual{
+  border:1px solid black;
+  height: 20vh;
+  flex-basis: 230px;
+
+  text-align: center;
+}
+
+
+.skill_text_box{
+  background-color: rgb(61, 61, 61);
+  color:white;
+  padding-bottom: 30px;
+}
+
+
+
+
+/*My services section*/
+#my_services {
+  height: 100vh;
+  border: black 1px solid;
+  position: relative;
+}
+
+.my_services_text {
+  border: 1px solid transparent;
+  height: 10vh;
+  margin: auto;
+  margin-top: 18vh;
+  text-align: center;
+  font-size: 28px;
+  line-height: 10vh;
+  background-image: linear-gradient(
+    to right,
+    navajowhite,
+    #141111,
+    #141111,
+    navajowhite
+  );
+  width: 90%;
+}
+
+.my_services_text h2 {
+  color: whitesmoke;
+}
+
+/*My services Parent Flex Container*/
+.my_services_flex {
+  height: 50vh;
+  width: 80%;
+  margin: auto;
+  margin-top: 9vh;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+/*My services Parent Flexes*/
+.my_services_flex_1 {
+  flex-basis: 25%;
+  background: #1e1c1c;
+  border: black 1px solid;
+}
+
+.my_services_flex_2 {
+  flex-basis: 28%;
+  background: #1e1c1c;
+  border: black 1px solid;
+}
+
+.my_services_flex_3 {
+  flex-basis: 25%;
+  background: #1e1c1c;
+  border: black 1px solid;
+}
+
+/*My Services Child Flex Container & Flexes*/
+
+/*My Services Child Flex Container*/
+/*services_flex_1_child_container && services_flex_2_child_container && services_flex_3_child_container*/
+.services_flex_1_child,
+.services_flex_2_child,
+.services_flex_3_child {
+  display: flex;
+  height: 50vh;
+  width: 100%;
+  flex-flow: row wrap;
+}
+
+/*My Services Child Flexes*/
+
+/*[Image Flex] services_flex_1_img && services_flex_2_img && services_flex_3_img*/
+.services_flex_1_img,
+.services_flex_2_img,
+.services_flex_3_img {
+  flex-basis: 50%;
+  margin: auto;
+  margin-top: -7vh;
+  object-fit:contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 20vh;
+  border: rgb(214, 175, 101) 5px solid;
+  background-color: blanchedalmond;
+}
+
+/*[Name Flex] services_flex_1_name && services_flex_2_name && services_flex_3_name*/
+.services_flex_1_name,
+.services_flex_2_name,
+.services_flex_3_name {
+  border: black 1px solid;
+  flex-basis: 85%;
+  height: 5vh;
+  margin: auto;
+  text-align: center;
+  line-height: 5vh;
+  background: wheat;
+}
+
+/*[Description Flex] services_flex_1_texts && services_flex_2_texts && services_flex_3_texts*/
+.services_flex_1_texts,
+.services_flex_2_texts,
+.services_flex_3_texts {
+  border: black 1px solid;
+  flex-basis: 88%;
+  height: 25vh;
+  margin: auto;
+  text-align: center;
+  background-image: linear-gradient(wheat, whitesmoke);
+}
+
+.my_services_flex img {
+  width: 100%;
+  height: 100%;
+  
+  background-size: cover;
+  background-position: center;
+}
+
+.my_services_flex h2 {
+  font-size: 20px;
+}
+
+.my_services_flex p {
+  font-size: 13px;
+}
+
+#my_services .enroll_slider_btn {
+  width: 50%;
+  height: 5vh;
+  margin: auto;
+  margin-top: 5vh;
+  border: 1px solid red;
+}
+
+.enroll_slider_btn button {
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/*enroll for services section*/
+
+#enroll_container {
+  height: 70vh;
+  width: 80%;
+  background: red;
+
+  margin-top: 22vh;
+  border-radius: 15px;
+  border: 2px solid red;
+
+  padding: 20px;
+
+  position: absolute;
+  top: 0;
+
+  /*left: 50%;
+  transform: translateX(-50%);*/
+  left: -85%;
+
+  transition: 0.5s;
+}
+
+#enroll_container h1 {
+  text-align: center;
+  margin: 15px;
+  font-size: 32px;
+}
+
+/*Cross Icon of Enroll Form*/
+#enroll_container i {
+  float: right;
+  margin-right: 171px;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+#enroll_container form {
+  width: 72%;
+  margin: auto;
+  border: 2px solid black;
+  background: yellow;
+}
+
+.row {
+  width: 95%;
+  margin: auto;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  margin: auto;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.col-25 {
+  float: left;
+  width: 22%;
+  text-align: center;
+
+  margin-top: 6px;
+}
+.col-25 label {
+  width: 78%;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after,
+.row_btn:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row_btn {
+  width: 40%;
+  margin: auto;
+  padding: 10px;
+
+  z-index: 3;
+  transition: 0.5s;
+}
+
+/* BLOGS*/
+
+#blog_section {
+  border: 1px solid black;
+  height: 100vh;
+}
+
+.blog_header {
+  border: 1px solid transparent;
+  height: 10vh;
+  margin: auto;
+  margin-top: 18vh;
+  text-align: center;
+  font-size: 28px;
+  line-height: 10vh;
+  background-image: linear-gradient(
+    to right,
+    navajowhite,
+    #141111,
+    #141111,
+    navajowhite
+  );
+
+  width: 90%;
+}
+.blog_header h1 {
+  color: whitesmoke;
+}
+
+.nipson_blogs {
+  width: 85%;
+  height: 65vh;
+  margin: auto;
+  margin-top: 4vh;
+
+  position: relative;
+
+  border: 2px solid crimson;
+}
+
+/*Forward Button*/
+.forward_btn {
+  float: right;
+  width: 4%;
+  transform: translateY(32vh);
+  background: navajowhite;
+  cursor: pointer;
+}
+
+/*Backward Button*/
+.back_btn {
+  float: left;
+  width: 4%;
+  transform: translateY(32vh);
+  background: navajowhite;
+  cursor: pointer;
+}
+.forward_btn h1,
+.back_btn h1 {
+  font-size: 55px;
+}
+
+/*Blog Grid GrandParent*/
+.blog_grid_grandparent {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-areas: "blog_grid_parent_1 blog_grid_parent_2 blog_grid_parent_3";
+}
+
+/*Blog Grid Parent 1*/
+.blog_grid_container_1 {
+  grid-area: blog_grid_parent_1;
+
+  height: 100%;
+
+  width: 92%;
+
+  display: grid;
+  margin: auto;
+
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "blog_grid_a blog_grid_b blog_grid_c";
+  grid-gap: 35px;
+
+  position: absolute;
+}
+
+/*Blog Grid Parent 2*/
+.blog_grid_container_2 {
+  grid-area: blog_grid_parent_2;
+
+  height: 100%;
+
+  width: 92%;
+
+  display: grid;
+  margin: auto;
+
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "blog_grid_d blog_grid_e blog_grid_f";
+  grid-gap: 35px;
+
+  position: absolute;
+}
+
+/*Blog Grid Parent 3*/
+.blog_grid_container_3 {
+  grid-area: blog_grid_parent_3;
+
+  height: 100%;
+
+  width: 92%;
+
+  display: grid;
+
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "blog_grid_g blog_grid_h blog_grid_i";
+  grid-gap: 35px;
+
+  position: absolute;
+  margin: auto;
+}
+
+.blog_grid_1 {
+  grid-area: blog_grid_a;
+  border: 1px black solid;
+
+  display: flex;
+  flex-direction: column;
+
+  background: navajowhite;
+}
+
+.blog_grid_2 {
+  grid-area: blog_grid_b;
+  border: 1px black solid;
+
+  display: flex;
+  flex-direction: column;
+
+  background: navajowhite;
+}
+
+.blog_grid_3 {
+  grid-area: blog_grid_c;
+  border: 1px black solid;
+
+  display: flex;
+  flex-direction: column;
+
+  background: navajowhite;
+}
+
+.blog_grid_4 {
+  grid-area: blog_grid_d;
+  border: 1px black solid;
+
+  display: flex;
+  flex-direction: column;
+
+  background: navajowhite;
+}
+
+.blog_grid_5 {
+  grid-area: blog_grid_e;
+  border: 1px black solid;
+
+  display: flex;
+  flex-direction: column;
+
+  background: navajowhite;
+}
+
+.blog_grid_6 {
+  grid-area: blog_grid_f;
+  border: 1px black solid;
+
+  display: flex;
+  flex-direction: column;
+
+  background: navajowhite;
+}
+
+.blog_grid_7 {
+  grid-area: blog_grid_g;
+  border: 1px black solid;
+
+  display: flex;
+  flex-direction: column;
+
+  background: navajowhite;
+}
+
+.blog_img {
+  border: 1px solid yellow;
+  flex-basis: 75%;
+}
+
+.blog_img img {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.blog_text_1
+  .blog_text_2
+  .blog_text_3
+  .blog_text_4
+  .blog_text_5
+  .blog_text_6
+  .blog_text_7 {
+  border: 1px solid black;
+  flex-basis: 25%;
+}
+
+/*h1 of  all blog-texts*/
+.blog_text_1 h1,
+.blog_text_2 h1,
+.blog_text_3 h1,
+.blog_text_4 h1,
+.blog_text_5 h1,
+.blog_text_6 h1,
+.blog_text_7 h1 {
+  font-size: 32px;
+}
+
+/*h3 of all blog texts*/
+.blog_text_1 h3,
+.blog_text_2 h3,
+.blog_text_3 h3,
+.blog_text_4 h3,
+.blog_text_5 h3,
+.blog_text_6 h3,
+.blog_text_7 h3 {
+  font-size: 22px;
+}
+
+/*pweb_footer*/
+
+#pweb_footer {
+  height: 10vh;
+  margin-top: 5vh;
+  border: 1px solid black;
+  background: black;
+}
+
+.pweb_footer_container {
+  text-align: center;
+  line-height: 10vh;
+  background-color: black;
+  color: white;
+}
+
+.pweb_footer_container h1{
+  color: aliceblue;
+}
+
+.notice {
+  text-align: center;
+}
+.notice h3 {
+  background: wheat;
+
+  font-size: 24px;
+  text-shadow: 1px 1px wheat;
+}
+/*------------MEDIA QUERY-1--------------------------*/
+/*target width 1101px, max-width: 1300px*/
+@media all and (max-width: 1300px) {
+  /*header section -->  Container --> header-flex*/
+
+  .header-flex {
+    height: 15vh;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: white;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+
+    margin-top: -50px;
+  }
+
+  /*logo*/
+  .logo {
+    flex-basis: 20%;
+  }
+
+  .logo img {
+    height: 14vh;
+    border: 4px solid whitesmoke;
+  }
+
+  /*nav-bar*/
+  .nav-bar {
+    flex-basis: 60%;
+  }
+
+  .nav-bar ul li {
+    padding: 25px;
+  }
+
+  .nav-bar ul li a {
+    font-size: 25px;
+  }
+
+  /*header section -->  Container --> Slider*/
+
+  .slideshow_img_text .img-text {
+    padding: 20px;
+  }
+
+  .slideshow_img_text .img-text h1 {
+    font-size: 55px;
+  }
+
+  .slideshow_img_text .img-text h3 {
+    margin-top: 2px;
+    font-size: 28px;
+  }
+
+  /*About me section*/
+
+  #about_me {
+    height: 94vh;
+    border: 2px black solid;
+  }
+
+  .about_heading {
+    margin-top: 17vh;
+
+    font-size: 24px;
+  }
+
+  .about_flex_1 {
+    height: 82%;
+    flex-basis: 45%;
+    border: 5px solid black;
+  }
+
+  .about_flex_2 {
+    flex-basis: 45%;
+
+    height: fit-content;
+  }
+
+  .about_flex_2 p {
+    margin-left: 20px;
+    margin-right: 20px;
+
+    font-size: 18px;
+    line-height: 26px;
+    padding: 5px;
+  }
+
+
+
+  /*My services section*/
+  #my_services {
+    height: 98vh;
+    border: black 1px solid;
+    position: relative;
+  }
+
+  .my_services_text {
+    margin-top: 17vh;
+
+    font-size: 24px;
+  }
+
+  /*My services Parent Flex Container*/
+  .my_services_flex {
+    height: 48vh;
+    width: 95%;
+  }
+
+  /*My services Parent Flexes*/
+  .my_services_flex_1 {
+    flex-basis: 25%;
+  }
+
+  .my_services_flex_2 {
+    flex-basis: 25%;
+  }
+
+  .my_services_flex_3 {
+    flex-basis: 25%;
+  }
+
+  /*My Services Child Flex Container & Flexes*/
+
+  /*My Services Child Flex Container*/
+  /*services_flex_1_child_container && services_flex_2_child_container && services_flex_3_child_container*/
+  .services_flex_1_child,
+  .services_flex_2_child,
+  .services_flex_3_child {
+    display: flex;
+    height: 40vh;
+    width: 98%;
+    flex-flow: row wrap;
+  }
+
+  /*My Services Child Flexes*/
+
+  /*[Image Flex] services_flex_1_img && services_flex_2_img && services_flex_3_img*/
+  .services_flex_1_img,
+  .services_flex_2_img,
+  .services_flex_3_img {
+    flex-basis: 57%;
+
+    height: 22vh;
+  }
+
+  /*[Description Flex] services_flex_1_texts && services_flex_2_texts && services_flex_3_texts*/
+  .services_flex_1_texts,
+  .services_flex_2_texts,
+  .services_flex_3_texts {
+    flex-basis: 88%;
+    height: fit-content;
+    padding: 10px;
+    margin-top: 5px;
+  }
+
+  .my_services_flex h2 {
+    font-size: 20px;
+  }
+
+  .my_services_flex p {
+    font-size: 14px;
+    line-height: 17px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  #my_services .enroll_slider_btn {
+    margin-top: 4vh;
+    cursor: pointer;
+  }
+
+  /*enroll for services section*/
+
+  #enroll_container {
+    height: 70vh;
+    width: 80%;
+
+    margin-top: 7vh;
+
+    padding: 20px;
+  }
+
+  /*Cross Icon of Enroll Form*/
+  #enroll_container i {
+    float: right;
+    margin-right: 21px;
+  }
+
+  #enroll_container form {
+    width: 95%;
+  }
+
+  /* BLOGS*/
+
+  #blog_section {
+    height: 90vh;
+  }
+
+  .blog_header {
+    border: 1px solid transparent;
+    height: 10vh;
+    margin: auto;
+    margin-top: 15vh;
+    text-align: center;
+    font-size: 25px;
+    line-height: 10vh;
+    background-image: linear-gradient(
+      to right,
+      navajowhite,
+      #141111,
+      #141111,
+      navajowhite
+    );
+
+    width: 90%;
+  }
+
+  .nipson_blogs {
+    width: 85%;
+    height: 58vh;
+    margin: auto;
+    margin-top: 4vh;
+  }
+
+  .blog_img {
+    border: 1px solid yellow;
+    flex-basis: 85%;
+  }
+
+  .blog_texts {
+    border: 1px solid black;
+    flex-basis: 85%;
+  }
+
+  .blog_texts h1 {
+    font-size: 28px;
+    cursor: pointer;
+  }
+
+  .blog_texts h3 {
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  /*pweb_footer*/
+
+  #pweb_footer {
+    height: 10vh;
+    margin-top: 5vh;
+    border: 1px solid black;
+    background: whitesmoke;
+  }
+
+  .pweb_footer_container {
+    text-align: center;
+    line-height: 10vh;
+    color: purple;
+  }
+}
+
+/*------------MEDIA QUERY-2--------------------------*/
+/*target width 800px, max-width: 1100px*/
+@media all and (max-width: 1100px) {
+  /*header section -->  Container --> header-flex*/
+
+  .header-flex {
+    height: 15vh;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: white;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+
+    margin-top: -50px;
+  }
+
+  /*logo*/
+  .logo {
+    flex-basis: 20%;
+  }
+
+  .logo img {
+    height: 12vh;
+    border: 4px solid whitesmoke;
+  }
+
+  /*nav-bar*/
+  .nav-bar {
+    flex-basis: 60%;
+  }
+
+  .nav-bar ul li {
+    padding: 16px;
+  }
+
+  .nav-bar ul li a {
+    font-size: 24px;
+  }
+
+  /*header section -->  Container --> Slider*/
+
+  .slideshow_img_text .img-text {
+    padding: 20px;
+  }
+
+  .slideshow_img_text .img-text h1 {
+    font-size: 50px;
+  }
+
+  .slideshow_img_text .img-text h3 {
+    margin-top: 2px;
+    font-size: 25px;
+  }
+
+  /*About me section*/
+
+  #about_me {
+    height: 90vh;
+    border: 2px black solid;
+  }
+
+  .about_heading {
+    margin-top: 14vh;
+
+    font-size: 22px;
+  }
+
+  .about_flex_1 {
+    height: 81%;
+    flex-basis: 47%;
+    border: 5px solid black;
+  }
+
+  .about_flex_2 {
+    flex-basis: 43%;
+
+    height: fit-content;
+  }
+
+  .about_flex_2 p {
+    margin-left: 20px;
+    margin-right: 20px;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  /*skills section*/
+  #platforms {
+    height: 95vh;
+  }
+  .platforms_text {
+    margin-top: 14vh;
+
+    font-size: 22px;
+  }
+
+  .platforms_grid_container {
+    height: 60vh;
+    width: 75%;
+
+    row-gap: 10px;
+    column-gap: 25px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    grid-template-areas:
+      "grid_a grid_b grid_c"
+      "grid_d grid_e grid_f";
+  }
+
+  .grid_1 {
+    grid-area: grid_a;
+
+    padding: 5px;
+
+    margin: 14px;
+  }
+
+  .grid_2 {
+    grid-area: grid_b;
+    padding: 5px;
+
+    margin: 14px;
+  }
+
+  .grid_3 {
+    grid-area: grid_c;
+    padding: 5px;
+
+    margin: 14px;
+  }
+
+  .grid_4 {
+    grid-area: grid_d;
+    padding: 5px;
+
+    margin: 14px;
+  }
+
+  .grid_5 {
+    grid-area: grid_e;
+    padding: 5px;
+
+    margin: 14px;
+  }
+
+  .grid_6 {
+    grid-area: grid_f;
+    padding: 5px;
+
+    margin: 14px;
+  }
+
+  /*My services section*/
+  #my_services {
+    height: 95vh;
+    border: black 1px solid;
+    position: relative;
+  }
+
+  .my_services_text {
+    margin-top: 14vh;
+
+    font-size: 22px;
+  }
+
+  /*My services Parent Flex Container*/
+  .my_services_flex {
+    height: 48vh;
+    width: 95%;
+  }
+
+  /*My services Parent Flexes*/
+  .my_services_flex_1 {
+    flex-basis: 28%;
+  }
+
+  .my_services_flex_2 {
+    flex-basis: 28%;
+  }
+
+  .my_services_flex_3 {
+    flex-basis: 28%;
+  }
+
+  /*My Services Child Flex Container & Flexes*/
+
+  /*My Services Child Flex Container*/
+  /*services_flex_1_child_container && services_flex_2_child_container && services_flex_3_child_container*/
+  .services_flex_1_child,
+  .services_flex_2_child,
+  .services_flex_3_child {
+    display: flex;
+    height: 40vh;
+    width: 100%;
+    flex-flow: row wrap;
+  }
+
+  /*My Services Child Flexes*/
+
+  /*[Image Flex] services_flex_1_img && services_flex_2_img && services_flex_3_img*/
+  .services_flex_1_img,
+  .services_flex_2_img,
+  .services_flex_3_img {
+    flex-basis: 55%;
+
+    height: 20vh;
+  }
+
+  /*[Description Flex] services_flex_1_texts && services_flex_2_texts && services_flex_3_texts*/
+  .services_flex_1_texts,
+  .services_flex_2_texts,
+  .services_flex_3_texts {
+    flex-basis: 88%;
+    height: fit-content;
+    padding: 10px;
+    margin-top: 5px;
+  }
+
+  .my_services_flex h2 {
+    font-size: 20px;
+  }
+
+  .my_services_flex p {
+    font-size: 14px;
+    line-height: 17px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  #my_services .enroll_slider_btn {
+    margin-top: 4vh;
+    cursor: pointer;
+  }
+
+  /*enroll for services section*/
+
+  #enroll_container {
+    height: 70vh;
+    width: 80%;
+
+    margin-top: 7vh;
+
+    padding: 20px;
+  }
+
+  /*Cross Icon of Enroll Form*/
+  #enroll_container i {
+    float: right;
+    margin-right: 21px;
+  }
+
+  #enroll_container form {
+    width: 95%;
+  }
+
+  /* BLOGS*/
+
+  #blog_section {
+    height: 90vh;
+  }
+
+  .blog_header {
+    border: 1px solid transparent;
+    height: 10vh;
+    margin: auto;
+    margin-top: 15vh;
+    text-align: center;
+    font-size: 25px;
+    line-height: 10vh;
+    background-image: linear-gradient(
+      to right,
+      navajowhite,
+      #141111,
+      #141111,
+      navajowhite
+    );
+
+    width: 90%;
+  }
+
+  .nipson_blogs {
+    width: 85%;
+    height: 58vh;
+    margin: auto;
+    margin-top: 4vh;
+  }
+
+  .blog_img {
+    border: 1px solid yellow;
+    flex-basis: 85%;
+  }
+
+  .blog_texts {
+    border: 1px solid black;
+    flex-basis: 85%;
+  }
+
+  .blog_texts h1 {
+    font-size: 28px;
+    cursor: pointer;
+  }
+
+  .blog_texts h3 {
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  /*pweb_footer*/
+
+  #pweb_footer {
+    height: 10vh;
+    margin-top: 5vh;
+    border: 1px solid black;
+    background: whitesmoke;
+  }
+
+  .pweb_footer_container {
+    text-align: center;
+    line-height: 10vh;
+    color: purple;
+  }
+}
+/*------------MEDIA QUERY-3--------------------------*/
+/*target width 901px, max-width: 1000px*/
+@media all and (max-width: 1000px) {
+  /*header section -->  Container --> header-flex*/
+
+  .header-flex {
+    height: 15vh;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: white;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+
+    margin-top: -50px;
+  }
+
+  /*logo*/
+  .logo {
+    flex-basis: 20%;
+  }
+
+  .logo img {
+    height: 12vh;
+    border: 4px solid whitesmoke;
+  }
+
+  /*nav-bar*/
+  .nav-bar {
+    flex-basis: 60%;
+  }
+
+  .nav-bar ul li {
+    padding: 16px;
+  }
+
+  .nav-bar ul li a {
+    font-size: 24px;
+  }
+
+  /*header section -->  Container --> Slider*/
+
+  .slideshow_img_text .img-text {
+    padding: 20px;
+  }
+
+  .slideshow_img_text .img-text h1 {
+    font-size: 45px;
+  }
+
+  .slideshow_img_text .img-text h3 {
+    margin-top: 2px;
+    font-size: 22px;
+  }
+
+  /*About me section*/
+
+  #about_me {
+    height: 85vh;
+    border: 2px black solid;
+  }
+
+  .about_heading {
+    margin-top: 14vh;
+
+    font-size: 20px;
+  }
+
+  .about_flex_1 {
+    height: 60%;
+    flex-basis: 45%;
+    border: 5px solid black;
+  }
+
+  .about_flex_2 {
+    flex-basis: 45%;
+
+    height: fit-content;
+  }
+
+  .about_flex_2 p {
+    margin-left: 20px;
+    margin-right: 20px;
+
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  /*skills section*/
+  #platforms {
+    height: 95vh;
+  }
+  .platforms_text {
+    margin-top: 14vh;
+
+    font-size: 20px;
+  }
+
+  .platforms_grid_container {
+    height: 60vh;
+    width: 85%;
+
+    row-gap: 10px;
+    column-gap: 12px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    grid-template-areas:
+      "grid_a grid_b grid_c"
+      "grid_d grid_e grid_f";
+  }
+
+  .grid_1 {
+    grid-area: grid_a;
+
+    padding: 5px;
+
+    margin: 14px;
+  }
+
+  .grid_2 {
+    grid-area: grid_b;
+    padding: 5px;
+
+    margin: 14px;
+  }
+
+  .grid_3 {
+    grid-area: grid_c;
+    padding: 5px;
+
+    margin: 14px;
+  }
+
+  .grid_4 {
+    grid-area: grid_d;
+    padding: 5px;
+
+    margin: 14px;
+  }
+
+  .grid_5 {
+    grid-area: grid_e;
+    padding: 5px;
+
+    margin: 14px;
+  }
+
+  .grid_6 {
+    grid-area: grid_f;
+    padding: 5px;
+
+    margin: 14px;
+  }
+
+  /*My services section*/
+  #my_services {
+    height: 95vh;
+    border: black 1px solid;
+    position: relative;
+  }
+
+  .my_services_text {
+    margin-top: 14vh;
+
+    font-size: 15px;
+  }
+
+  /*My services Parent Flex Container*/
+  .my_services_flex {
+    height: 48vh;
+    width: 95%;
+  }
+
+  /*My services Parent Flexes*/
+  .my_services_flex_1 {
+    flex-basis: 30%;
+  }
+
+  .my_services_flex_2 {
+    flex-basis: 30%;
+  }
+
+  .my_services_flex_3 {
+    flex-basis: 30%;
+  }
+
+  /*My Services Child Flex Container & Flexes*/
+
+  /*My Services Child Flex Container*/
+  /*services_flex_1_child_container && services_flex_2_child_container && services_flex_3_child_container*/
+  .services_flex_1_child,
+  .services_flex_2_child,
+  .services_flex_3_child {
+    display: flex;
+    height: 40vh;
+    width: 100%;
+    flex-flow: row wrap;
+  }
+
+  /*My Services Child Flexes*/
+
+  /*[Image Flex] services_flex_1_img && services_flex_2_img && services_flex_3_img*/
+  .services_flex_1_img,
+  .services_flex_2_img,
+  .services_flex_3_img {
+    flex-basis: 65%;
+
+    height: 20vh;
+  }
+
+  /*[Description Flex] services_flex_1_texts && services_flex_2_texts && services_flex_3_texts*/
+  .services_flex_1_texts,
+  .services_flex_2_texts,
+  .services_flex_3_texts {
+    flex-basis: 88%;
+    height: fit-content;
+    padding: 10px;
+    margin-top: 5px;
+  }
+
+  .my_services_flex h2 {
+    font-size: 20px;
+  }
+
+  .my_services_flex p {
+    font-size: 14px;
+    line-height: 17px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  #my_services .enroll_slider_btn {
+    margin-top: 4vh;
+    cursor: pointer;
+  }
+
+  /*enroll for services section*/
+
+  #enroll_container {
+    height: 70vh;
+    width: 80%;
+
+    margin-top: 7vh;
+
+    padding: 20px;
+  }
+
+  /*Cross Icon of Enroll Form*/
+  #enroll_container i {
+    float: right;
+    margin-right: 21px;
+  }
+
+  #enroll_container form {
+    width: 95%;
+  }
+
+  /* BLOGS*/
+
+  #blog_section {
+    height: 90vh;
+  }
+
+  .blog_header {
+    border: 1px solid transparent;
+    height: 10vh;
+    margin: auto;
+    margin-top: 15vh;
+    text-align: center;
+    font-size: 25px;
+    line-height: 10vh;
+    background-image: linear-gradient(
+      to right,
+      navajowhite,
+      #141111,
+      #141111,
+      navajowhite
+    );
+
+    width: 90%;
+  }
+
+  .nipson_blogs {
+    width: 85%;
+    height: 58vh;
+    margin: auto;
+    margin-top: 4vh;
+  }
+
+  .blog_img {
+    border: 1px solid yellow;
+    flex-basis: 85%;
+  }
+
+  .blog_texts {
+    border: 1px solid black;
+    flex-basis: 85%;
+  }
+
+  .blog_texts h1 {
+    font-size: 28px;
+    cursor: pointer;
+  }
+
+  .blog_texts h3 {
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  /*pweb_footer*/
+
+  #pweb_footer {
+    height: 10vh;
+    margin-top: 5vh;
+    border: 1px solid black;
+    background: whitesmoke;
+  }
+
+  .pweb_footer_container {
+    text-align: center;
+    line-height: 10vh;
+    color: purple;
+  }
+}
+
+/*------------MEDIA QUERY-4--------------------------*/
+/*target width 801px, max-width: 1000px*/
+@media all and (max-width: 900px) {
+  /*header section -->  Container --> header-flex*/
+
+  .header-flex {
+    height: 15vh;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: white;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+
+    margin-top: -50px;
+  }
+
+  /*logo*/
+  .logo {
+    flex-basis: 20%;
+  }
+
+  .logo img {
+    height: 10vh;
+    border: 4px solid whitesmoke;
+  }
+
+  /*nav-bar*/
+  .nav-bar {
+    flex-basis: 60%;
+  }
+
+  .nav-bar ul li {
+    padding: 12px;
+  }
+
+  .nav-bar ul li a {
+    font-size: 24px;
+  }
+
+  /*header section -->  Container --> Slider*/
+
+  .slideshow_img_text .img-text {
+    padding: 20px;
+  }
+
+  .slideshow_img_text .img-text h1 {
+    font-size: 40px;
+  }
+
+  .slideshow_img_text .img-text h3 {
+    margin-top: 2px;
+    font-size: 20px;
+  }
+
+  /*About me section*/
+
+  #about_me {
+    height: 92vh;
+    border: 2px black solid;
+  }
+
+  .about_heading {
+    margin-top: 14vh;
+
+    font-size: 20px;
+  }
+
+  .about_flex_1 {
+    height: 60%;
+    flex-basis: 45%;
+    border: 5px solid black;
+  }
+
+  .about_flex_2 {
+    flex-basis: 45%;
+
+    height: fit-content;
+  }
+
+  .about_flex_2 p {
+    margin-left: 20px;
+    margin-right: 20px;
+
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  /*skills section*/
+  #platforms {
+    height: 122vh;
+  }
+  .platforms_text {
+    margin-top: 14vh;
+
+    font-size: 20px;
+  }
+
+  .platforms_grid_container {
+    height: 60vh;
+    width: 85%;
+
+    row-gap: 10px;
+    column-gap: 12px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    grid-template-areas:
+      "grid_a grid_b grid_c"
+      "grid_d grid_e grid_f";
+  }
+
+  .grid_1 {
+    grid-area: grid_a;
+
+    padding: 5px;
+
+    margin: 12px;
+  }
+
+  .grid_2 {
+    grid-area: grid_b;
+    padding: 5px;
+
+    margin: 10px;
+  }
+
+  .grid_3 {
+    grid-area: grid_c;
+    padding: 5px;
+
+    margin: 12px;
+  }
+
+  .grid_4 {
+    grid-area: grid_d;
+
+    margin: 12px;
+  }
+
+  .grid_5 {
+    grid-area: grid_e;
+    padding: 5px;
+
+    margin: 12px;
+  }
+
+  .grid_6 {
+    grid-area: grid_f;
+    padding: 5px;
+
+    margin: 12px;
+  }
+
+  /*My services section*/
+  #my_services {
+    height: 95vh;
+    border: black 1px solid;
+    position: relative;
+  }
+
+  .my_services_text {
+    margin-top: 14vh;
+
+    font-size: 20px;
+  }
+
+  /*My services Parent Flex Container*/
+  .my_services_flex {
+    height: 48vh;
+    width: 95%;
+  }
+
+  /*My services Parent Flexes*/
+  .my_services_flex_1 {
+    flex-basis: 30%;
+  }
+
+  .my_services_flex_2 {
+    flex-basis: 30%;
+  }
+
+  .my_services_flex_3 {
+    flex-basis: 30%;
+  }
+
+  /*My Services Child Flex Container & Flexes*/
+
+  /*My Services Child Flex Container*/
+  /*services_flex_1_child_container && services_flex_2_child_container && services_flex_3_child_container*/
+  .services_flex_1_child,
+  .services_flex_2_child,
+  .services_flex_3_child {
+    display: flex;
+    height: 40vh;
+    width: 100%;
+    flex-flow: row wrap;
+  }
+
+  /*My Services Child Flexes*/
+
+  /*[Image Flex] services_flex_1_img && services_flex_2_img && services_flex_3_img*/
+  .services_flex_1_img,
+  .services_flex_2_img,
+  .services_flex_3_img {
+    flex-basis: 65%;
+
+    height: 20vh;
+  }
+
+  /*[Description Flex] services_flex_1_texts && services_flex_2_texts && services_flex_3_texts*/
+  .services_flex_1_texts,
+  .services_flex_2_texts,
+  .services_flex_3_texts {
+    flex-basis: 88%;
+    height: fit-content;
+    padding: 10px;
+    margin-top: 5px;
+  }
+
+  .my_services_flex h2 {
+    font-size: 20px;
+  }
+
+  .my_services_flex p {
+    font-size: 14px;
+    line-height: 17px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  #my_services .enroll_slider_btn {
+    margin-top: 4vh;
+  }
+
+  /*enroll for services section*/
+
+  #enroll_container {
+    height: 70vh;
+    width: 80%;
+
+    margin-top: 7vh;
+
+    padding: 20px;
+  }
+
+  /*Cross Icon of Enroll Form*/
+  #enroll_container i {
+    float: right;
+    margin-right: 21px;
+  }
+
+  #enroll_container form {
+    width: 95%;
+  }
+
+  /* BLOGS*/
+
+  #blog_section {
+    height: 90vh;
+  }
+
+  .blog_header {
+    border: 1px solid transparent;
+    height: 10vh;
+    margin: auto;
+    margin-top: 15vh;
+    text-align: center;
+    font-size: 25px;
+    line-height: 10vh;
+    background-image: linear-gradient(
+      to right,
+      navajowhite,
+      #141111,
+      #141111,
+      navajowhite
+    );
+
+    width: 90%;
+  }
+
+  .nipson_blogs {
+    width: 85%;
+    height: 58vh;
+    margin: auto;
+    margin-top: 4vh;
+  }
+
+  .blog_img {
+    border: 1px solid yellow;
+    flex-basis: 85%;
+  }
+
+  .blog_texts {
+    border: 1px solid black;
+    flex-basis: 85%;
+  }
+
+  .blog_texts h1 {
+    font-size: 28px;
+    cursor: pointer;
+  }
+
+  .blog_texts h3 {
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  /*pweb_footer*/
+
+  #pweb_footer {
+    height: 10vh;
+    margin-top: 5vh;
+    border: 1px solid black;
+    background: whitesmoke;
+  }
+
+  .pweb_footer_container {
+    text-align: center;
+    line-height: 10vh;
+    color: purple;
+  }
+}
+
+/*------------MEDIA QUERY-5--------------------------*/
+/*target width 601px, max-width: 800px*/
+@media all and (max-width: 800px) {
+  /*header section -->  Container --> header-flex*/
+
+  .header-flex {
+    height: 15vh;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: white;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+
+    margin-top: -50px;
+  }
+
+  /*logo*/
+  .logo {
+    flex-basis: 20%;
+  }
+
+  .logo img {
+    height: 10vh;
+    border: 4px solid whitesmoke;
+  }
+
+  /*nav-bar*/
+  .nav-bar {
+    flex-basis: 60%;
+  }
+
+  .nav-bar ul li {
+    padding: 10px;
+  }
+
+  .nav-bar ul li a {
+    font-size: 22px;
+  }
+
+  /*header section -->  Container --> Slider*/
+
+  .slideshow_img_text .img-text {
+    padding: 20px;
+  }
+
+  .slideshow_img_text .img-text h1 {
+    font-size: 35px;
+  }
+
+  .slideshow_img_text .img-text h3 {
+    margin-top: 2px;
+    font-size: 17px;
+  }
+
+  /*About me section*/
+
+  #about_me {
+    height: 109vh;
+    border: 2px black solid;
+  }
+
+  .about_heading {
+    margin-top: 14vh;
+
+    font-size: 20px;
+  }
+
+  .about_flex_1 {
+    height: 54%;
+    flex-basis: 50%;
+    border: 5px solid black;
+  }
+
+  .about_flex_2 {
+    flex-basis: 90%;
+    margin-top: 2vh;
+
+    height: fit-content;
+  }
+
+  .about_flex_2 p {
+    margin-left: 20px;
+    margin-right: 20px;
+
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+     /*skills section*/
+
+.skill_content_individual{
+  
+  flex-basis: 130px;
+
+}
+
+
+  /*My services section*/
+  #my_services {
+    height: 145vh;
+    border: black 1px solid;
+    position: relative;
+  }
+
+  .my_services_text {
+    margin-top: 14vh;
+
+    font-size: 15px;
+  }
+
+  /*My services Parent Flex Container*/
+  .my_services_flex {
+    height: 100vh;
+    width: 95%;
+  }
+
+  /*My services Parent Flexes*/
+  .my_services_flex_1 {
+    flex-basis: 40%;
+  }
+
+  .my_services_flex_2 {
+    flex-basis: 40%;
+  }
+
+  .my_services_flex_3 {
+    flex-basis: 40%;
+    margin-top: 10vh;
+  }
+
+  /*My Services Child Flex Container & Flexes*/
+
+  /*My Services Child Flex Container*/
+  /*services_flex_1_child_container && services_flex_2_child_container && services_flex_3_child_container*/
+  .services_flex_1_child,
+  .services_flex_2_child,
+  .services_flex_3_child {
+    display: flex;
+    height: 40vh;
+    width: 100%;
+    flex-flow: row wrap;
+  }
+
+  /*My Services Child Flexes*/
+
+  /*[Image Flex] services_flex_1_img && services_flex_2_img && services_flex_3_img*/
+  .services_flex_1_img,
+  .services_flex_2_img,
+  .services_flex_3_img {
+    flex-basis: 60%;
+
+    height: 20vh;
+  }
+
+  /*[Description Flex] services_flex_1_texts && services_flex_2_texts && services_flex_3_texts*/
+  .services_flex_1_texts,
+  .services_flex_2_texts,
+  .services_flex_3_texts {
+    flex-basis: 88%;
+    height: fit-content;
+    padding: 10px;
+    margin-top: 5px;
+  }
+
+  .my_services_flex h2 {
+    font-size: 20px;
+  }
+
+  .my_services_flex p {
+    font-size: 14px;
+    line-height: 17px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  #my_services .enroll_slider_btn {
+    margin-top: 1vh;
+  }
+
+  /*enroll for services section*/
+
+  #enroll_container {
+    height: 70vh;
+    width: 80%;
+
+    margin-top: 56vh;
+
+    padding: 20px;
+  }
+
+  /*Cross Icon of Enroll Form*/
+  #enroll_container i {
+    float: right;
+    margin-right: 21px;
+  }
+
+  #enroll_container form {
+    width: 95%;
+  }
+
+  /* BLOGS*/
+
+  #blog_section {
+    border: 1px solid black;
+    height: 222vh;
+  }
+
+  .blog_header {
+    border: 1px solid transparent;
+
+    font-size: 15px;
+    height: 10vh;
+    margin: auto;
+    margin-top: 14vh;
+
+    text-align: center;
+
+    line-height: 10vh;
+    background-image: linear-gradient(
+      to right,
+      navajowhite,
+      #141111,
+      #141111,
+      navajowhite
+    );
+
+    width: 90%;
+  }
+  .blog_header h1 {
+    color: whitesmoke;
+  }
+
+  .nipson_blogs {
+    width: 95%;
+    height: 189vh;
+    margin: auto;
+    margin-top: 4vh;
+
+    position: relative;
+
+    border: 2px solid crimson;
+  }
+
+  /*Blog Grid Parent 1*/
+  .blog_grid_container_1 {
+    grid-area: blog_grid_parent_1;
+
+    height: 100%;
+
+    width: 92%;
+
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "blog_grid_a"
+      " blog_grid_b"
+      "blog_grid_c";
+    grid-gap: 35px;
+  }
+
+  /*Blog Grid Parent 2*/
+  .blog_grid_container_2 {
+    grid-area: blog_grid_parent_2;
+
+    height: 100%;
+
+    width: 92%;
+
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "blog_grid_d"
+      " blog_grid_e"
+      " blog_grid_f";
+    grid-gap: 35px;
+  }
+
+  /*Blog Grid Parent 3*/
+  .blog_grid_container_3 {
+    grid-area: blog_grid_parent_3;
+
+    height: 100%;
+
+    width: 92%;
+
+    display: grid;
+
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "blog_grid_g"
+      " blog_grid_h"
+      " blog_grid_i";
+  }
+
+  /*pweb_footer*/
+
+  #pweb_footer {
+    height: 10vh;
+    margin-top: 5vh;
+    border: 1px solid black;
+    background: whitesmoke;
+  }
+
+  .pweb_footer_container {
+    text-align: center;
+    line-height: 10vh;
+    color: purple;
+  }
+}
+
+/*------------MEDIA QUERY-6--------------------------*/
+/*target width 401, max-width: 600*/
+@media all and (max-width: 600px) {
+  /*header section -->  Container --> header-flex*/
+
+  .header-flex {
+    height: 15vh;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: white;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+
+    margin-top: -50px;
+  }
+
+  /*logo*/
+  .logo {
+    flex-basis: 20%;
+  }
+
+  .logo img {
+    height: 7vh;
+    border: 4px solid whitesmoke;
+  }
+
+  /*nav-bar*/
+  .nav-bar {
+    flex-basis: 60%;
+  }
+
+  .nav-bar ul li {
+    padding: 10px;
+  }
+
+  .nav-bar ul li a {
+    font-size: 20px;
+  }
+
+  /*header section -->  Container --> Slider*/
+
+  .slideshow_img_text .img-text {
+    padding: 20px;
+  }
+
+  .slideshow_img_text .img-text h1 {
+    font-size: 25px;
+  }
+
+  .slideshow_img_text .img-text h3 {
+    font-size: 15px;
+    margin-top: 2px;
+  }
+
+  /*About me section*/
+
+  #about_me {
+    height: 121vh;
+    border: 2px black solid;
+  }
+
+  .about_heading {
+    margin-top: 17vh;
+
+    font-size: 15px;
+  }
+
+  .about_flex_1 {
+    height: 50%;
+    flex-basis: 55%;
+
+    border: 5px solid black;
+  }
+
+  .about_flex_2 {
+    flex-basis: 90%;
+    margin-top: 2vh;
+
+    height: fit-content;
+  }
+
+  .about_flex_2 p {
+    margin-left: 20px;
+    margin-right: 20px;
+
+    font-size: 12px;
+    line-height: 22px;
+  }
+
+    /*skills section*/
+
+.skill_content_individual{
+  
+  flex-basis: 130px;
+
+}
+
+
+  /*My services section*/
+  #my_services {
+    height: 195vh;
+    border: black 1px solid;
+    position: relative;
+  }
+
+  .my_services_text {
+    margin-top: 17vh;
+
+    font-size: 15px;
+  }
+
+  /*My services Parent Flex Container*/
+  .my_services_flex {
+    height: 150vh;
+    width: 95%;
+  }
+
+  /*My services Parent Flexes*/
+  .my_services_flex_1 {
+    flex-basis: 70%;
+  }
+
+  .my_services_flex_2 {
+    flex-basis: 70%;
+    margin-top: 10vh;
+  }
+
+  .my_services_flex_3 {
+    flex-basis: 70%;
+    margin-top: 10vh;
+  }
+
+  /*My Services Child Flex Container & Flexes*/
+
+  /*My Services Child Flex Container*/
+  /*services_flex_1_child_container && services_flex_2_child_container && services_flex_3_child_container*/
+  .services_flex_1_child,
+  .services_flex_2_child,
+  .services_flex_3_child {
+    display: flex;
+    height: 40vh;
+    width: 100%;
+    flex-flow: row wrap;
+  }
+
+  /*My Services Child Flexes*/
+
+  /*[Image Flex] services_flex_1_img && services_flex_2_img && services_flex_3_img*/
+  .services_flex_1_img,
+  .services_flex_2_img,
+  .services_flex_3_img {
+    flex-basis: 60%;
+
+    height: 20vh;
+  }
+
+  /*[Description Flex] services_flex_1_texts && services_flex_2_texts && services_flex_3_texts*/
+  .services_flex_1_texts,
+  .services_flex_2_texts,
+  .services_flex_3_texts {
+    flex-basis: 88%;
+    height: fit-content;
+    padding: 10px;
+    margin-top: 5px;
+  }
+
+  .my_services_flex h2 {
+    font-size: 20px;
+  }
+
+  .my_services_flex p {
+    font-size: 14px;
+    line-height: 17px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  #my_services .enroll_slider_btn {
+    margin-top: 1vh;
+  }
+
+  /*enroll for services section*/
+
+  #enroll_container {
+    height: 70vh;
+    width: 80%;
+
+    margin-top: 110vh;
+
+    padding: 20px;
+  }
+
+  /*Cross Icon of Enroll Form*/
+  #enroll_container i {
+    float: right;
+    margin-right: 21px;
+  }
+
+  #enroll_container form {
+    width: 95%;
+  }
+
+  /* BLOGS*/
+
+  #blog_section {
+    border: 1px solid black;
+    height: 222vh;
+  }
+
+  .blog_header {
+    border: 1px solid transparent;
+
+    font-size: 15px;
+    height: 10vh;
+    margin: auto;
+    margin-top: 17vh;
+
+    text-align: center;
+
+    line-height: 10vh;
+    background-image: linear-gradient(
+      to right,
+      navajowhite,
+      #141111,
+      #141111,
+      navajowhite
+    );
+
+    width: 90%;
+  }
+  .blog_header h1 {
+    color: whitesmoke;
+  }
+
+  .nipson_blogs {
+    width: 95%;
+    height: 189vh;
+    margin: auto;
+    margin-top: 4vh;
+
+    position: relative;
+
+    border: 2px solid crimson;
+  }
+
+  /*Blog Grid Parent 1*/
+  .blog_grid_container_1 {
+    grid-area: blog_grid_parent_1;
+
+    height: 100%;
+
+    width: 92%;
+
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "blog_grid_a"
+      " blog_grid_b"
+      "blog_grid_c";
+    grid-gap: 35px;
+  }
+
+  /*Blog Grid Parent 2*/
+  .blog_grid_container_2 {
+    grid-area: blog_grid_parent_2;
+
+    height: 100%;
+
+    width: 92%;
+
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "blog_grid_d"
+      " blog_grid_e"
+      " blog_grid_f";
+    grid-gap: 35px;
+  }
+
+  /*Blog Grid Parent 3*/
+  .blog_grid_container_3 {
+    grid-area: blog_grid_parent_3;
+
+    height: 100%;
+
+    width: 92%;
+
+    display: grid;
+
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "blog_grid_g"
+      " blog_grid_h"
+      " blog_grid_i";
+  }
+
+  /*pweb_footer*/
+
+  #pweb_footer {
+    height: 10vh;
+    margin-top: 5vh;
+    border: 1px solid black;
+    background: whitesmoke;
+  }
+
+  .pweb_footer_container {
+    text-align: center;
+    line-height: 10vh;
+    color: purple;
+  }
+}
+
+/*------------MEDIA QUERY-7--------------------------*/
+/*target width 200, max-width: 400*/
+@media all and (max-width: 400px) {
+  /*header section -->  Container --> header-flex*/
+
+  .header-flex {
+    height: 15vh;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: white;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+
+    margin-top: -50px;
+  }
+
+  /*logo*/
+  .logo {
+    flex-basis: 10%;
+  }
+
+  .logo img {
+    height: 5vh;
+    border: 4px solid whitesmoke;
+  }
+
+  /*nav-bar*/
+  .nav-bar {
+    flex-basis: 35%;
+  }
+
+  .nav-bar ul li {
+    padding: 10px;
+  }
+
+  .nav-bar ul li a {
+    font-size: 14px;
+  }
+
+  /*header section -->  Container --> Slider*/
+
+  .slideshow_img_text .img-text {
+    padding: 20px;
+  }
+
+  .slideshow_img_text .img-text h1 {
+    font-size: 15px;
+  }
+
+  .slideshow_img_text .img-text h3 {
+    margin-top: 2px;
+    font-size: 12px;
+  }
+
+  /*About me section*/
+
+  #about_me {
+    height: 200vh;
+    border: 2px black solid;
+  }
+
+  .about_heading {
+    margin-top: 25vh;
+
+    font-size: 14px;
+  }
+
+  .about_flex_1 {
+    height: 45%;
+    flex-basis: 80%;
+    border: 5px solid black;
+  }
+
+  .about_flex_2 {
+    flex-basis: 65%;
+
+    height: fit-content;
+  }
+
+  .about_flex_2 p {
+    margin-left: 20px;
+    margin-right: 20px;
+
+    font-size: 12px;
+    line-height: 22px;
+  }
+   /*skills section*/
+
+   .skill_content_individual{
+     flex-basis: 100px;
+  }
+  
+
+  /*My services Parent Flex Container*/
+  .my_services_flex {
+    height: 180vh;
+    width: 95%;
+  }
+
+  /*My services Parent Flexes*/
+  .my_services_flex_1 {
+    flex-basis: 30%;
+  }
+
+  .my_services_flex_2 {
+    flex-basis: 90%;
+    margin-top: 10vh;
+  }
+
+  .my_services_flex_3 {
+    flex-basis: 90%;
+    margin-top: 10vh;
+  }
+
+  /*My Services Child Flex Container & Flexes*/
+
+  /*My Services Child Flex Container*/
+  /*services_flex_1_child_container && services_flex_2_child_container && services_flex_3_child_container*/
+  .services_flex_1_child,
+  .services_flex_2_child,
+  .services_flex_3_child {
+    display: flex;
+    height: 40vh;
+    width: 100%;
+    flex-flow: row wrap;
+  }
+
+  /*My Services Child Flexes*/
+
+  /*[Image Flex] services_flex_1_img && services_flex_2_img && services_flex_3_img*/
+  .services_flex_1_img,
+  .services_flex_2_img,
+  .services_flex_3_img {
+    flex-basis: 70%;
+
+    height: 15vh;
+  }
+
+  /*[Description Flex] services_flex_1_texts && services_flex_2_texts && services_flex_3_texts*/
+  .services_flex_1_texts,
+  .services_flex_2_texts,
+  .services_flex_3_texts {
+    flex-basis: 88%;
+    height: fit-content;
+  }
+
+  .my_services_flex h2 {
+    font-size: 20px;
+  }
+
+  .my_services_flex p {
+    font-size: 12px;
+    line-height: 17px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  #my_services .enroll_slider_btn {
+    margin-top: 1vh;
+  }
+
+  /*enroll for services section*/
+
+  #enroll_container {
+    height: 70vh;
+    width: 80%;
+
+    margin-top: 145vh;
+
+    padding: 20px;
+  }
+
+  /*Cross Icon of Enroll Form*/
+  #enroll_container i {
+    float: right;
+    margin-right: 21px;
+  }
+
+  #enroll_container form {
+    width: 95%;
+  }
+
+  /* BLOGS*/
+
+  #blog_section {
+    border: 1px solid black;
+    height: 235vh;
+  }
+
+  .blog_header {
+    border: 1px solid transparent;
+
+    font-size: 14px;
+    height: 10vh;
+    margin: auto;
+    margin-top: 25vh;
+
+    text-align: center;
+
+    line-height: 10vh;
+    background-image: linear-gradient(
+      to right,
+      navajowhite,
+      #141111,
+      #141111,
+      navajowhite
+    );
+
+    width: 90%;
+  }
+  .blog_header h1 {
+    color: whitesmoke;
+  }
+
+  .nipson_blogs {
+    width: 95%;
+    height: 189vh;
+    margin: auto;
+    margin-top: 4vh;
+
+    position: relative;
+
+    border: 2px solid crimson;
+  }
+
+  /*Blog Grid Parent 1*/
+  .blog_grid_container_1 {
+    grid-area: blog_grid_parent_1;
+
+    height: 100%;
+
+    width: 92%;
+
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "blog_grid_a"
+      " blog_grid_b"
+      "blog_grid_c";
+    grid-gap: 35px;
+  }
+
+  /*Blog Grid Parent 2*/
+  .blog_grid_container_2 {
+    grid-area: blog_grid_parent_2;
+
+    height: 100%;
+
+    width: 92%;
+
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "blog_grid_d"
+      " blog_grid_e"
+      " blog_grid_f";
+    grid-gap: 35px;
+  }
+
+  /*Blog Grid Parent 3*/
+  .blog_grid_container_3 {
+    grid-area: blog_grid_parent_3;
+
+    height: 100%;
+
+    width: 92%;
+
+    display: grid;
+
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "blog_grid_g"
+      " blog_grid_h"
+      " blog_grid_i";
+  }
+
+  /*pweb_footer*/
+
+  #pweb_footer {
+    height: 10vh;
+    margin-top: 5vh;
+    border: 1px solid black;
+    background: whitesmoke;
+  }
+
+  .pweb_footer_container {
+    text-align: center;
+    line-height: 10vh;
+    color: purple;
+  }
+}
+
+
+
